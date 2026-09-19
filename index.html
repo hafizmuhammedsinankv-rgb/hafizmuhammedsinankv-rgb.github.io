@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -127,6 +127,36 @@
             transform: translateX(5px);
             border-color: #a78bfa;
         }
+        
+        /* കോൺടാക്ട് ബട്ടണുകൾക്കുള്ള ഡിസൈൻ */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 15px;
+        }
+        .contact-btn {
+            background: rgba(139, 92, 246, 0.1);
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .contact-btn:hover {
+            background: rgba(139, 92, 246, 0.3);
+            transform: translateY(-3px);
+            border-color: #a78bfa;
+            color: #ffffff;
+        }
+        
         .footer {
             margin-top: 40px;
             font-size: 13px;
@@ -147,6 +177,12 @@
         <div class="section">
             <h2>🏠 Home & Roots</h2>
             <p>I am from <strong>Mampattumoola</strong>, located near Vandoor in Malappuram district, Kerala.</p>
+        </div>
+
+        <!-- കുടുംബം സെക്ഷൻ -->
+        <div class="section">
+            <h2>👨‍👩‍👦 Family</h2>
+            <p>My family includes my loving father, mother, brother, and myself.</p>
         </div>
 
         <!-- പഠന സ്ഥാപനങ്ങൾ സെക്ഷൻ -->
@@ -176,6 +212,27 @@
         <div class="section">
             <h2>💻 Interests & Skills</h2>
             <p>Passionate about technology, web learning, exploring digital tools, and continuously acquiring knowledge.</p>
+        </div>
+
+        <!-- കോൺടാക്ട് സെക്ഷൻ (ക്ലിക്ക് ചെയ്യാവുന്ന ലിങ്കുകൾ) -->
+        <div class="section">
+            <h2>🔗 Connect With Me</h2>
+            <div class="contact-grid">
+                <!-- ഫോൺ വിളിക്കാൻ -->
+                <a href="tel:+919562200637" class="contact-btn">📞 Phone</a>
+                
+                <!-- വാട്സാപ്പിലേക്ക് പോകാൻ -->
+                <a href="https://wa.me/919562200637" target="_blank" class="contact-btn">💬 WhatsApp</a>
+                
+                <!-- ഇൻസ്റ്റഗ്രാമിലേക്ക് പോകാൻ -->
+                <a href="https://instagram.com/kevi_sinan" target="_blank" class="contact-btn">📸 Instagram</a>
+                
+                <!-- യൂട്യൂബിലേക്ക് പോകാൻ -->
+                <a href="https://youtube.com/@kalamullahiquran?si=ljPzL2bchunZHU2R" target="_blank" class="contact-btn">▶️ YouTube</a>
+                
+                <!-- ഇമെയിൽ അയക്കാൻ -->
+                <a href="mailto:Sinankv999@gmail.com" class="contact-btn">📧 Email</a>
+            </div>
         </div>
 
         <!-- ഫൂട്ടർ -->
