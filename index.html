@@ -1,4 +1,4 @@
-            <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,6 @@
             padding: 40px 30px;
             border-radius: 20px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.6);
-            /* ഫെഡ്-ഇൻ ആനിമേഷൻ */
             animation: fadeIn 1s ease-out; 
         }
         @keyframes fadeIn {
@@ -48,7 +47,6 @@
         h1 {
             margin-bottom: 5px;
             font-size: 28px;
-            /* പേരിന് ഗ്രേഡിയന്റ് നിറം */
             background: linear-gradient(90deg, #a78bfa, #f472b6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -57,7 +55,7 @@
         h3 {
             color: #9ca3af;
             font-weight: 400;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-size: 16px;
         }
         .badge {
@@ -72,14 +70,67 @@
             border: 1px solid rgba(139, 92, 246, 0.3);
             letter-spacing: 0.5px;
         }
+        
+        /* കോൺടാക്ട് ബട്ടണുകൾ മുകളിൽ നൽകാനുള്ള ഡിസൈൻ */
+        .top-contact-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .contact-btn {
+            background: rgba(139, 92, 246, 0.1);
+            color: #e5e7eb;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .contact-btn:hover {
+            background: rgba(139, 92, 246, 0.4);
+            transform: translateY(-3px);
+            border-color: #a78bfa;
+            color: #ffffff;
+        }
+        
+        /* ലൊക്കേഷൻ ബട്ടൺ ഡിസൈൻ */
+        .location-btn {
+            background: rgba(244, 114, 182, 0.15);
+            color: #f472b6;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(244, 114, 182, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+        .location-btn:hover {
+            background: rgba(244, 114, 182, 0.3);
+            color: #fff;
+        }
+
         .section {
             background: #1f2937;
             padding: 25px;
             border-radius: 15px;
-            margin-top: 25px;
+            margin-top: 20px;
             text-align: left;
             border-left: 4px solid #a78bfa;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .section:hover {
             transform: translateY(-5px);
@@ -117,46 +168,10 @@
             color: #e5e7eb;
             font-weight: 500;
             font-size: 14px;
-            transition: all 0.3s ease;
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        .books-list li:hover {
-            background: rgba(139, 92, 246, 0.2);
-            transform: translateX(5px);
-            border-color: #a78bfa;
-        }
-        
-        /* കോൺടാക്ട് ബട്ടണുകൾക്കുള്ള ഡിസൈൻ */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 12px;
-            margin-top: 15px;
-        }
-        .contact-btn {
-            background: rgba(139, 92, 246, 0.1);
-            color: #e5e7eb;
-            text-decoration: none;
-            padding: 12px 15px;
-            border-radius: 10px;
-            border: 1px solid rgba(139, 92, 246, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        .contact-btn:hover {
-            background: rgba(139, 92, 246, 0.3);
-            transform: translateY(-3px);
-            border-color: #a78bfa;
-            color: #ffffff;
-        }
-        
         .footer {
             margin-top: 40px;
             font-size: 13px;
@@ -173,10 +188,21 @@
         <h1>Muhammed Sinan K V</h1>
         <h3>Quranic Student & Learner</h3>
         
-        <!-- ഹോം / സ്വദേശം സെക്ഷൻ -->
+        <!-- കോൺടാക്ട് വിവരങ്ങൾ ഏറ്റവും മുകളിൽ -->
+        <div class="top-contact-grid">
+            <a href="tel:+919562200637" class="contact-btn">📞 Phone</a>
+            <a href="https://wa.me/919562200637" target="_blank" class="contact-btn">💬 WhatsApp</a>
+            <a href="https://instagram.com/kevi_sinan" target="_blank" class="contact-btn">📸 Instagram</a>
+            <a href="https://youtube.com/@kalamullahiquran?si=ljPzL2bchunZHU2R" target="_blank" class="contact-btn">▶️ YouTube</a>
+            <a href="mailto:Sinankv999@gmail.com" class="contact-btn">📧 Email</a>
+        </div>
+        
+        <!-- ഹോം / സ്വദേശം സെക്ഷൻ (ലൊക്കേഷൻ ബട്ടൺ സഹിതം) -->
         <div class="section">
             <h2>🏠 Home & Roots</h2>
             <p>I am from <strong>Mampattumoola</strong>, located near Vandoor in Malappuram district, Kerala.</p>
+            <!-- നിങ്ങളുടെ ഒറിജിനൽ ലൊക്കേഷൻ ലിങ്ക് ഇവിടെ ചേർത്തിട്ടുണ്ട് -->
+            <a href="https://maps.app.goo.gl/qFjyH46y7asmtkz98" target="_blank" class="location-btn">📍 View on Google Maps</a>
         </div>
 
         <!-- കുടുംബം സെക്ഷൻ -->
@@ -214,32 +240,10 @@
             <p>Passionate about technology, web learning, exploring digital tools, and continuously acquiring knowledge.</p>
         </div>
 
-        <!-- കോൺടാക്ട് സെക്ഷൻ (ക്ലിക്ക് ചെയ്യാവുന്ന ലിങ്കുകൾ) -->
-        <div class="section">
-            <h2>🔗 Connect With Me</h2>
-            <div class="contact-grid">
-                <!-- ഫോൺ വിളിക്കാൻ -->
-                <a href="tel:+919562200637" class="contact-btn">📞 Phone</a>
-                
-                <!-- വാട്സാപ്പിലേക്ക് പോകാൻ -->
-                <a href="https://wa.me/919562200637" target="_blank" class="contact-btn">💬 WhatsApp</a>
-                
-                <!-- ഇൻസ്റ്റഗ്രാമിലേക്ക് പോകാൻ -->
-                <a href="https://instagram.com/kevi_sinan" target="_blank" class="contact-btn">📸 Instagram</a>
-                
-                <!-- യൂട്യൂബിലേക്ക് പോകാൻ -->
-                <a href="https://youtube.com/@kalamullahiquran?si=ljPzL2bchunZHU2R" target="_blank" class="contact-btn">▶️ YouTube</a>
-                
-                <!-- ഇമെയിൽ അയക്കാൻ -->
-                <a href="mailto:Sinankv999@gmail.com" class="contact-btn">📧 Email</a>
-            </div>
-        </div>
-
         <!-- ഫൂട്ടർ -->
         <div class="footer">
             © 2026 Muhammed Sinan K V
         </div>
     </div>
 </body>
-    </html>
-    
+</html>
